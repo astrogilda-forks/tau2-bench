@@ -309,6 +309,7 @@ class BaseOrchestrator(ABC, Generic[BaseAgentT, BaseUserT, TrajectoryItemT]):
             initialization_actions=initialization_actions,
             message_history=message_history,
         )
+        self.environment.set_faults(self.task.faults)
 
     def _execute_tool_calls(self, tool_calls: list[ToolCall]) -> list[ToolMessage]:
         """
