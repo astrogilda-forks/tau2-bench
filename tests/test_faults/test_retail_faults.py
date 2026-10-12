@@ -1,6 +1,6 @@
 """The retail_faults task set, run on tau2's own fault schedule and graded by tau2's evaluator.
 
-retail_faults comes from the `faults` extra (ratchet-cases), loaded through the
+retail_faults comes from the `faults` extra (probity-ratchet-cases), loaded through the
 tau2.plugins entry point: one task per retail write tool and timeout kind. A
 scripted agent replays each task's gold actions; no model, no user simulator,
 no key. Run with `make test-faults`.

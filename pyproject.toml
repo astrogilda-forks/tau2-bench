@@ -68,7 +68,7 @@ gym = [
     "gymnasium>=1.2.2",
 ]
 faults = [
-    "ratchet-cases==0.2.0",
+    "probity-ratchet-cases==0.2.0",
 ]
 dev = [
     "pytest>=8.3.5",
